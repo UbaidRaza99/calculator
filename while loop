@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+int main() 
+{
+ while(true) 
+ {
+ int val1;
+ int val2;
+ char A;
+cout<<"Enter a 1ST Value=";
+cin>> val1;
+cout<<"Enter a 2ND Value="; 
+cin>> val2;
+cout<<"Enter a Operation(+ - * / %)=";
+cin>>A;
+if(A=='+')
+cout<<val1 + val2<<endl;
+else
+if(A=='-')
+cout<<val1 - val2<<endl;
+else
+if(A=='*')
+cout<<val1 * val2<<endl;
+else
+if(A=='/')
+cout<<val1 / val2<<endl;
+else
+if(A=='%')
+cout<<val1 % val2<<endl;
+else
+break;
+}
+cout<<"invalid op";
+return 0;
+}
